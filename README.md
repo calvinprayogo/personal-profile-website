@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This is my personal portfolio website built using HTML and CSS.
+This is my personal portfolio website built using HTML, CSS, and JS.
 
 ## Features
 - Responsive layout
@@ -11,6 +11,7 @@ This is my personal portfolio website built using HTML and CSS.
 ## Technologies Used
 - HTML5
 - CSS3
+- JS
 - Git & GitHub
 
 ## Live Demo
