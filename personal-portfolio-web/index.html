@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calvin Prayogo | Web Developer</title>
+  <meta name="description" content="Calvin Prayogo portfolio. Learning web development step by step with HTML, CSS, and JavaScript." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top progress bar (optional, nice modern touch) -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#top">CP</a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left reveal">
+        <p class="kicker">Junior Web Developer</p>
+        <h1>Hello, I’m <span class="accent">Calvin Prayogo</span>.</h1>
+        <p class="hero-intro">
+          Calvin Prayogo is a 4th-semester Information Technology student at Universitas Mikroskil with a growing focus on front-end web development. Calvin is currently strengthening his foundation in HTML and CSS while building simple portfolio projects to sharpen structure, layout, and responsive design skills. Driven by a step-by-step learning approach, Calvin plans to learn JavaScript next to create more interactive and engaging websites
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS (learning)</span>
+          <span class="badge">JavaScript (learning)</span>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="photo-card">
+          <img src="./resources/Profile.jpeg" alt="Portrait of Calvin Prayogo" />
+          <div class="photo-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="section-head">
+        <h2>About</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="card about-card">
+        <div class="about-text">
+          <p>
+            I am an Information Technology student with a strong interest in web development.
+            Currently, I am focusing on learning the fundamentals of HTML, CSS, and building clean website structure.
+            I believe learning step by step is the best way to grow as a developer.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <p class="stat-num">2+</p>
+              <p class="stat-label">Mini projects</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">Daily</p>
+              <p class="stat-label">Practice</p>
+            </div>
+            <div class="stat">
+              <p class="stat-num">1</p>
+              <p class="stat-label">Portfolio site</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-side">
+          <div class="mini-card">
+            <p class="mini-title">Currently</p>
+            <p class="mini-desc">Building personal portfolio & learning responsive layouts.</p>
+          </div>
+          <div class="mini-card">
+            <p class="mini-title">Goal</p>
+            <p class="mini-desc">Become a confident front-end developer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="grid">
+        <div class="card skill">
+          <h3>HTML</h3>
+          <p>Semantic structure, clean headings, sections.</p>
+          <div class="meter"><span style="width: 45%"></span></div>
+          <p class="meter-label">Beginner</p>
+        </div>
+
+        <div class="card skill">
+          <h3>CSS</h3>
+          <p>Layout basics, responsive practice, hover effects.</p>
+          <div class="meter"><span style="width: 30%"></span></div>
+          <p class="meter-label">Learning</p>
+        </div>
+
+        <div class="card skill">
+          <h3>Problem Solving</h3>
+          <p>Learning by building and fixing bugs step-by-step.</p>
+          <div class="meter"><span style="width: 40%"></span></div>
+          <p class="meter-label">Improving</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING -->
+    <section id="learning" class="section reveal">
+      <div class="section-head">
+        <h2>Currently Learning</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="card timeline">
+        <div class="step">
+          <div class="dot"></div>
+          <div>
+            <h3>HTML fundamentals</h3>
+            <p>Structure pages well using semantic elements.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot"></div>
+          <div>
+            <h3>CSS layout</h3>
+            <p>Flexbox, spacing, typography, responsive design.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="dot"></div>
+          <div>
+            <h3>JavaScript basics</h3>
+            <p>DOM events and small interactions (like this carousel).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Carousel) -->
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="carousel card">
+        <div class="carousel-top">
+          <p class="muted">Use the arrows or dots to browse.</p>
+          <div class="carousel-actions">
+            <button class="icon-btn" id="prevBtn" aria-label="Previous project">←</button>
+            <button class="icon-btn" id="nextBtn" aria-label="Next project">→</button>
+          </div>
+        </div>
+
+        <div class="slides" id="slides">
+          <article class="slide is-active">
+            <img src="./resources/project2.png" alt="Project screenshot 1" class="slide-img" />
+            <div class="slide-body">
+              <h3>Personal Profile Website</h3>
+              <p>My first portfolio site built with HTML + CSS + JS animations.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <div class="links">
+                <a class="link" href="https://github.com/calvinprayogo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="link" href="https://github.com/calvinprayogo/personal-profile-website" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="slide">
+            <img src="./resources/project1.png" alt="Project screenshot 2" class="slide-img" />
+            <div class="slide-body">
+              <h3>Living Painter Art School</h3>
+              <p>A simple landing page to practice layout, spacing, and typography.</p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <div class="links">
+                <a class="link" href="https://art-class-landing-page.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a class="link" href="https://github.com/calvinprayogo/art-class-landing-page" target="_blank" rel="noopener noreferrer">Repo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="dots" id="dots" aria-label="Project navigation dots"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="card contact">
+        <p class="muted">You can find my work and learning progress on GitHub:</p>
+        <div class="contact-links">
+          <a class="btn" href="https://github.com/calvinprayogo" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          <a class="btn ghost" href="https://github.com/calvinprayogo/personal-profile-website" target="_blank" rel="noopener noreferrer">Project Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>This portfolio documents my learning journey as a web developer.</p>
+    </footer>
+  </main>
+
+  <!-- Modal for gallery -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Close">✕</button>
+      <img id="modalImg" alt="Full size photo" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
